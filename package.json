@@ -40,5 +40,6 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0"
+    "react-modal": "^3.16.1"
   }
 }
