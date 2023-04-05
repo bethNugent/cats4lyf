@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { faker } from '@faker-js/faker';
 import Modal from "react-modal";
 import './HomePage.css';
 
@@ -83,7 +84,9 @@ function HomePage() {
         </div>
         {selectedCat && (
           <>
-            <h2>{selectedCat.id}</h2>
+            <h2>Name: {faker.name.firstName()}</h2>
+            <p>Birthday: {faker.date.between('2005-01-01', '2023-04-05').toLocaleDateString()}</p>
+            <p>Location: {faker.address.city(undefined, undefined, 'en_GB')}</p>
             <div className="modalImage">
               <img src={selectedCat.url} alt={selectedCat.id} />
             </div>
