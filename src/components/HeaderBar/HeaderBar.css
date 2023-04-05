@@ -18,7 +18,9 @@
 }
 
 .header-container .title {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: "CuteWeow";
+    line-height: 50px;
 }
 
 .header-container i[class^="fa-"] {
