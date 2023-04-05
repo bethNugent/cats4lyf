@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.16daa310.css",
-    "main.js": "./static/js/main.5a59d386.js",
+    "main.js": "./static/js/main.61e4bc2f.js",
     "static/media/cute-meow.otf": "./static/media/cute-meow.393bebfb7e459a300842.otf",
     "index.html": "./index.html",
     "main.16daa310.css.map": "./static/css/main.16daa310.css.map",
-    "main.5a59d386.js.map": "./static/js/main.5a59d386.js.map"
+    "main.61e4bc2f.js.map": "./static/js/main.61e4bc2f.js.map"
   },
   "entrypoints": [
     "static/css/main.16daa310.css",
-    "static/js/main.5a59d386.js"
+    "static/js/main.61e4bc2f.js"
   ]
 }
