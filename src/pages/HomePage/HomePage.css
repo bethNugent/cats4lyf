@@ -1,0 +1,52 @@
+.return {
+    display: inline-block;
+margin: 50px;    width: 300px; /* set a fixed width */
+    height: 200px; /* set a fixed height */
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative; /* add a relative position */
+  }
+  
+  .return:hover {
+    cursor: pointer;
+  }
+  
+  .return img {
+    object-fit: cover;
+    position: absolute; /* make the image absolute positioned */
+    top: 50%; /* move it down by 50% of the container height */
+    left: 50%; /* move it right by 50% of the container width */
+    transform: translate(-50%, -50%); /* center it vertically and horizontally */
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+    max-height: none;
+    display: block;
+  }
+  
+  h2,
+  p {
+    text-align: center;
+    color: black;
+  }
+  
+  .modalImage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modalImage img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  
+  .closeModal {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+  }
+  
