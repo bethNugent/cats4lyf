@@ -1,18 +1,21 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import HeaderBar from './components/HeaderBar';
 import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
-
-import HeaderBar from './components/HeaderBar';
-
 import './App.css';
 
+/**
+ * The main entry-point for the application.
+ * Controls routing between pages, and sets a consistent site-wide layout.
+ * 
+ * @returns {JSX.Element} - The rendered component.
+ */
 export default function App()
 {
     return (
         <div className="App">
-            <BrowserRouter basename={ (process.env.NODE_ENV === 'development') ? "/" : "/cats4lyf" }>
+            <BrowserRouter>
                 <HeaderBar />
                 <Routes>
                     <Route path="/" element={<HomePage />} />

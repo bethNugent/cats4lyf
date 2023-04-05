@@ -1,12 +1,15 @@
 import { Link } from 'react-router-dom';
 import './HeaderBar.css';
 
-export default function HeaderBar() {
-
-    return(<header className="header-container">
+/**
+ * 
+ * @returns {JSX.Element} - The rendered component.
+ */
+export default function HeaderBar()
+{
+    return (<header className="header-container">
         <section className="logo-section">
             <Link to="/"><i className="fa-solid fa-cat"></i></Link>
-
         </section>
         <section className="title-section">
             <span className="title">Catz 4 Lyf</span>
