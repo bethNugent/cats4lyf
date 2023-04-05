@@ -5,15 +5,15 @@ export default function HeaderBar() {
 
     return(<header className="header-container">
         <section className="logo-section">
-            <Link to="/">Home</Link>
+            <Link to="/"><i className="fa-solid fa-cat"></i></Link>
 
         </section>
         <section className="title-section">
             <span className="title">Catz 4 Lyf</span>
         </section>
         <nav className="nav-section">
-            <Link to="/checkout">Checkout</Link>
-            <Link to="/about">About</Link>
+            <Link to="/about"><i className="fa-solid fa-question"></i></Link>
+            <Link to="/checkout"><i className="fa-solid fa-basket-shopping"></i></Link>
         </nav>
     </header>);
 }

@@ -8,15 +8,20 @@
 }
 
 .logo-section {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .nav-section {
-    padding-right: 10px;
+    padding-right: 20px;
     display: flex;
-    gap: 1ch;
+    gap: 2ch;
 }
 
 .header-container .title {
-    font-size: 36px;
+    font-size: 2rem;
+}
+
+.header-container i[class^="fa-"] {
+    font-size: 1.5rem;
+    color: #000000;
 }
