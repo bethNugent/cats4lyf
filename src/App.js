@@ -5,17 +5,14 @@ import Checkout from './pages/Checkout';
 import About from './pages/About';
 
 import './App.css';
+import HeaderBar from './components/HeaderBar';
 
 export default function App()
 {
     return (
         <div className="App">
             <BrowserRouter>
-                <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/checkout">Checkout</Link>
-                    <Link to="/about">About</Link>
-                </nav>
+                <HeaderBar />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/checkout" element={<Checkout />} />
