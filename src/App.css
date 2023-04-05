@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-
 @font-face {
-    font-family: "CuteWeow";
+    font-family: "CuteMeow";
     src: url("./styles/fonts/cute-meow.otf") format("opentype");
 }
 
@@ -11,8 +10,5 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: antiquewhite;
-}
-
-.App {
     text-align: center;
 }
