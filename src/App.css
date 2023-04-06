@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 @font-face {
     font-family: "CuteMeow";
     src: url("./styles/fonts/cute-meow.otf") format("opentype");
@@ -6,9 +6,8 @@
 
 body {
     margin: 0;
-    font-family: 'Forum', cursive;
+    font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: antiquewhite;
     text-align: center;
 }
