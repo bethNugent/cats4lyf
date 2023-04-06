@@ -1,9 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Layout components.
 import Header from './components/layout/Header';
+
+// Page components.
 import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
+
+// Global style reset, by Andy Bell: https://andy-bell.co.uk/a-modern-css-reset
 import './reset.css';
+
+// Global styling.
 import './App.css';
 
 /**

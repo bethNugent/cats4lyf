@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 import './Header.css';
 
+/**
+ * The global header for the website.
+ * 
+ * @returns {JSX.Element} - The rendered component.
+ */
 export default function Header()
 {
     return(<header className='header-container'>
