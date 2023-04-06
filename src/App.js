@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Layout components.
 import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
 
 // Page components.
 import HomePage from './pages/HomePage';
@@ -26,11 +27,14 @@ export default function App()
         <div className="App">
             <BrowserRouter>
                 <Header />
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/checkout" element={<Checkout />} />
-                    <Route path="/about" element={<About />} />
-                </Routes>
+                <main className="main-container">
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/checkout" element={<Checkout />} />
+                    </Routes>
+                </main>
+                <Footer />
             </BrowserRouter>
         </div>
     );
