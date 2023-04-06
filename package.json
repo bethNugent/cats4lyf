@@ -1,5 +1,6 @@
 {
   "name": "cats4lyf",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "set PUBLIC_URL=/cats4lyf npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
-    "react-modal": "^3.16.1"
+    "react-modal": "^3.16.1",
+    "gh-pages": "^5.0.0"
   }
 }
