@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 export default function Header()
@@ -7,5 +8,13 @@ export default function Header()
             <p className='title'>Catz-4-Lyf</p>
             <p className='subtitle'>Adoption Agency</p>
         </section>
+        <nav className='nav-section'>
+            <ul>
+                <li><Link className="topNavLink" to="/">HOME</Link></li>
+                <li><Link className="topNavLink" to="/catalogue">CATALOGUE</Link></li>
+                <li><Link className="topNavLink" to="/about">ABOUT</Link></li>
+                <li><Link className="topNavLink" to="/checkout">CHECKOUT</Link></li>
+            </ul>
+        </nav>
     </header>);
 }
