@@ -12,3 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
 }
+
+main {
+    padding: 2ch;
+}
