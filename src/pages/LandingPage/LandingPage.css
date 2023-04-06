@@ -1,7 +1,30 @@
 .landing-container {
     max-width: 75vw;
     width: 75vw;
-    background-color: antiquewhite;
     min-height:120vh;
     margin:auto;
+    text-align: justify;
+}
+
+.landing-container .divider {
+    margin: 2rem;
+}
+
+.landing-container .two-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-container article {
+    width: 46%;
+}
+
+.landing-container article header {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.landing-container article p {
+    text-align: justify;
+    margin-block: 1rem;
 }
