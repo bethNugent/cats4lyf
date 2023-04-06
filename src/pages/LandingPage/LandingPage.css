@@ -1,0 +1,7 @@
+.landing-container {
+    max-width: 75vw;
+    width: 75vw;
+    background-color: antiquewhite;
+    min-height:120vh;
+    margin:auto;
+}
