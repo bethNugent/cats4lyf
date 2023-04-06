@@ -1,0 +1,93 @@
+body {
+    overflow-y: hidden;
+}
+
+.checkout-container {
+  position: relative;
+    margin: 150px auto;
+    max-width: 1200px;
+    min-height: 600px;
+    max-height: 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.8);
+}
+
+.checkout-container h1 {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.checkout-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.checkout-container table th,
+.checkout-container table td {
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.checkout-container table th {
+  background-color: #ffbbbb;
+}
+
+.checkout-container table td button,
+.checkout-container button {
+  background-color: #ffbbbb;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+input {
+  height: 2rem;
+  width: 50%;
+  font-size: 15px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 33%;
+  height: 40%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 5px 15px;
+}
+
+.modal button {
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.modal h2 {
+  margin: 20px 0px;
+}
+
+.price-checkout {
+  position: absolute;
+  width: 200px;
+  right: 5%;
+  bottom: 10%;
+  font-size: 22px;
+  text-align: left;
+}
+
+.checkout {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 200px;
+}
