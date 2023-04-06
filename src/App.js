@@ -26,7 +26,7 @@ export default function App()
 {
     return (
         <div className="app-container">
-            <BrowserRouter>
+            <BrowserRouter basename={ process.env.NODE_ENV === 'development' ? "/" : "/cats4lyf" }>
                 <Header />
                 <main className="main-container">
                     <Routes>
