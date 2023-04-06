@@ -1,5 +1,6 @@
 {
   "name": "cats4lyf",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +9,15 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
     "router-dom": "^2.2.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "set PUBLIC_URL=/cats4lyf npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,5 +40,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "react-modal": "^3.16.1",
+    "gh-pages": "^5.0.0"
   }
 }
