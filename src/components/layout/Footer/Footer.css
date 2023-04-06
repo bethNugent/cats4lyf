@@ -7,11 +7,15 @@
     margin: 0;
 }
 
-.footer-container img {
-    max-width: 200px;
+.partnership-container {
+    padding: 2rem;
 }
 
-.footer-container ul {
+.partnership-container img {
+    max-height: 100px;
+}
+
+.partnership-container ul {
     display: flex;
     align-items: center;
 }

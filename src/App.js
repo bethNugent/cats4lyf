@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 
 // Page components.
 import DummyPage from './pages/DummyPage';
+import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
@@ -30,7 +31,8 @@ export default function App()
                 <Header />
                 <main className="main-container">
                     <Routes>
-                        <Route path="/" element={<HomePage />} />
+                        <Route path="/" element={<LandingPage />} />
+                        <Route path="/catalogue" element={<HomePage />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/checkout" element={<Checkout />} />
                         <Route path="/dummy" element={<DummyPage />} />

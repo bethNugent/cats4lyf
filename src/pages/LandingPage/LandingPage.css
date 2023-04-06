@@ -1,0 +1,64 @@
+.landing-container {
+    max-width: 75vw;
+    width: 75vw;
+    min-height:120vh;
+    margin:auto;
+    text-align: justify;
+}
+
+.landing-container .leaderboard {
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.landing-container .divider {
+    margin: 2rem;
+}
+
+.landing-container .two-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-container article {
+    width: 46%;
+}
+
+.landing-container article header {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.landing-container article p {
+    text-align: justify;
+    margin-block: 1rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.landing-container .featured-felines-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cat-card {
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.cat-card:hover {
+    transform: scale(1.1);
+}
+
+.cat-card img {
+    padding: 10px;
+}
+
+.cat-card p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 5px;
+}
