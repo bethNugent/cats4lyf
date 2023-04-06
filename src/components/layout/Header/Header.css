@@ -7,3 +7,23 @@
     margin: 0;
     border-bottom: 1px solid rgba(0,0,0,0.5);
 }
+
+/* ================================================ */
+/*  LOGO SECTION
+/* ================================================ */
+
+.logo-section {
+    font-family: 'Quintessential';
+}
+
+.logo-section .title {
+    font-family: 'CuteMeow';
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: -1rem;
+}
+
+.logo-section .subtitle {
+    font-size: 2rem;
+    line-height: 4rem;
+}
