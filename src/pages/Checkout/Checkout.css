@@ -22,13 +22,18 @@
 
 .checkout-container table th,
 .checkout-container table td {
-  padding: 10px;
+  padding: 10px 30px;
   text-align: center;
   font-size: 22px;
 }
 
+
 .checkout-container table th {
   background-color: #ffbbbb;
+}
+
+.donation-header {
+  width: 30%;
 }
 
 .checkout-container table td button,
@@ -44,7 +49,7 @@
 
 input {
   height: 2rem;
-  width: 50%;
+  width: 65%;
   font-size: 15px;
 }
 
@@ -58,13 +63,13 @@ input {
   border-radius: 10px;
   padding: 20px;
   width: 33%;
-  height: 40%;
+  height: 55%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.5) 10px 5px 15px;
 }
 
 .modal button {
-  width: fit-content;
+  width: 30px;
   align-self: flex-end;
 }
 

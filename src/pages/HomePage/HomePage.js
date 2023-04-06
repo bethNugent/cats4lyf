@@ -18,10 +18,13 @@ function HomePage() {
   };
 
   const handleCatClick = (cat) => {
+    const catBreeds = ['Siamese', 'Persian', 'Sphynx', 'Bengal', 'Maine Coon', "Egyptian Mau", "Burmese", "Snowshoe", "Ocicat", "Bombay"];
+    const randomBreed = catBreeds[Math.floor(Math.random() * catBreeds.length)];
     const selectedCat = {
       ...cat,
       name: faker.name.firstName(),
-      age: faker.datatype.number({ min: 1, max: 20 })
+      age: faker.datatype.number({ min: 1, max: 20 }),
+      breed: randomBreed
     };
     setSelectedCat(selectedCat);
     toggleModal();
@@ -119,11 +122,13 @@ function HomePage() {
         {selectedCat && (
           <>
         <h2>{selectedCat.name}</h2>
-            <div className="modalImage">
-              <img src={selectedCat.url} alt={selectedCat.id} />
-            </div>
-            <button onClick={handleAddToBasket}>Add to Basket</button>
-          </>
+        <div className="modalImage">
+          <img src={selectedCat.url} alt={selectedCat.id} />
+        </div>
+        <p>Age: {selectedCat.age}</p>
+        <p>Breed: {selectedCat.breed}</p>
+        <button onClick={handleAddToBasket}>Add to Basket</button>
+        </>
         )}
       </Modal>
     </div>

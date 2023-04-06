@@ -65,17 +65,17 @@ function Checkout() {
         <thead>
           <tr>
             <th>Cat Name</th>
-            <th>Breed</th>
             <th>Age</th>
-            <th>Donation</th>
+            <th>Breed</th>
+            <th className="donation-header">Donation</th>
           </tr>
         </thead>
         <tbody>
         {cartItems.map((item) => (
           <tr key={item.id}>
             <td>{item.name}</td>
-            <td>{item.breed}</td>
             <td>{item.age}</td>
+            <td>{item.breed}</td>
             <td>
               <input type='number' value={item.donation || 0} onChange={(e) => updateDonation(item.id, e.target.value)} onFocus={(e) => e.target.select()}/>
             </td>
