@@ -8,15 +8,6 @@
 }
 
 /* ================================================ */
-/*  PAGE ELEMENTS
-/* ================================================ */
-
-a {
-    text-decoration: none;
-    color: unset;
-}
-
-/* ================================================ */
 /*  LOGO SECTION
 /* ================================================ */
 
@@ -34,37 +25,4 @@ a {
 .logo-section .subtitle {
     font-size: 2rem;
     padding-bottom: 1ch;
-}
-
-/* ================================================ */
-/*  NAV SECTION
-/* ================================================ */
-
-.nav-section {
-    border: 1px solid rgba(0,0,0,0.5);
-}
-
-.nav-section ul {
-    display: flex;
-    justify-content: center;
-    gap: 10ch;
-    list-style: none;
-}
-
-.topNavLink {
-    font-weight: 200;
-    flex:1;
-}
-
-.topNavLink:hover {
-    font-weight: 400;
-    text-decoration: underline;
-}
-
-.topNavLink.selected {
-    font-weight: 600;
-}
-
-.topNavLink.selected:hover {
-    font-weight: 400;
 }

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../layout.css';
 import './Header.css';
 
 /**
@@ -15,10 +16,10 @@ export default function Header()
         </section>
         <nav className='nav-section'>
             <ul>
-                <li><Link className="topNavLink" to="/">HOME</Link></li>
-                <li><Link className="topNavLink" to="/catalogue">CATALOGUE</Link></li>
-                <li><Link className="topNavLink" to="/about">ABOUT</Link></li>
-                <li><Link className="topNavLink" to="/checkout">CHECKOUT</Link></li>
+                <li><Link className="navLink" to="/">HOME</Link></li>
+                <li><Link className="navLink" to="/catalogue">CATALOGUE</Link></li>
+                <li><Link className="navLink" to="/about">ABOUT</Link></li>
+                <li><Link className="navLink" to="/checkout">CHECKOUT</Link></li>
             </ul>
         </nav>
     </header>);

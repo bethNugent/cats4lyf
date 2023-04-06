@@ -1,0 +1,42 @@
+/* ================================================ */
+/*  PAGE ELEMENTS
+/* ================================================ */
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* ================================================ */
+/*  NAV SECTION
+/* ================================================ */
+
+.nav-section {
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+footer ul,
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 10ch;
+    list-style: none;
+}
+
+.navLink {
+    font-weight: 200;
+    flex:1;
+}
+
+.navLink:hover {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.navLink.selected {
+    font-weight: 600;
+}
+
+.navLink.selected:hover {
+    font-weight: 400;
+}
