@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.32e8c48a.css",
+    "main.css": "./static/css/main.f24dbdac.css",
     "main.js": "./static/js/main.da7ebf65.js",
     "static/media/cute-meow.otf": "./static/media/cute-meow.393bebfb7e459a300842.otf",
     "static/media/adch.jpg": "./static/media/adch.a4d20bab8bba43ca3f68.jpg",
@@ -8,11 +8,11 @@
     "static/media/wwf.png": "./static/media/wwf.d0702024035f08ccb8a7.png",
     "static/media/rspca.png": "./static/media/rspca.7a1db14a524ac361bf72.png",
     "index.html": "./index.html",
-    "main.32e8c48a.css.map": "./static/css/main.32e8c48a.css.map",
+    "main.f24dbdac.css.map": "./static/css/main.f24dbdac.css.map",
     "main.da7ebf65.js.map": "./static/js/main.da7ebf65.js.map"
   },
   "entrypoints": [
-    "static/css/main.32e8c48a.css",
+    "static/css/main.f24dbdac.css",
     "static/js/main.da7ebf65.js"
   ]
 }
