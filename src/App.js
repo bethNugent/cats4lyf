@@ -5,6 +5,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 
 // Page components.
+import DummyPage from './pages/DummyPage';
 import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
@@ -24,7 +25,7 @@ import './App.css';
 export default function App()
 {
     return (
-        <div className="App">
+        <div className="app-container">
             <BrowserRouter>
                 <Header />
                 <main className="main-container">
@@ -32,6 +33,7 @@ export default function App()
                         <Route path="/" element={<HomePage />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/checkout" element={<Checkout />} />
+                        <Route path="/dummy" element={<DummyPage />} />
                     </Routes>
                 </main>
                 <Footer />
