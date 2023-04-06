@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HeaderBar from './components/HeaderBar';
 import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
@@ -16,7 +15,6 @@ export default function App()
     return (
         <div className="App">
             <BrowserRouter>
-                <HeaderBar />
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/checkout" element={<Checkout />} />
