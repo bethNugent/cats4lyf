@@ -3,6 +3,7 @@ import Header from './components/layout/Header';
 import HomePage from './pages/HomePage';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
+import './reset.css';
 import './App.css';
 
 /**
