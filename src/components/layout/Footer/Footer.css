@@ -1,0 +1,17 @@
+/* ================================================ */
+/*  CONTAINER
+/* ================================================ */
+
+.footer-container {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container img {
+    max-width: 200px;
+}
+
+.footer-container ul {
+    display: flex;
+    align-items: center;
+}
