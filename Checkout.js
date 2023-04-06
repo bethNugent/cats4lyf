@@ -1,24 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Modal from 'react-modal';
 import './Checkout.css';
 
 function Checkout() {
-  const [cartItems, setCartItems] = useState([
-      {
-        id: 1,
-        name: "Fluffy",
-        age: '2yrs',
-        donation: 0
-      },
-      {
-        id: 2,
-        name: "Whiskers",
-        age: '8yrs',
-        donation: 0
-      }
-  ]);
+  const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
-  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const cartData = localStorage.getItem("cartData");
@@ -40,7 +25,7 @@ function Checkout() {
   const updateDonation = (itemId, value) => {
     const updatedCartItems = cartItems.map((item) => {
       if (item.id === itemId) {
-        return { ...item, donation: parseFloat(value) || 0 };
+        return { ...item, donation: parseInt(value) };
       }
       return item;
     });
@@ -76,6 +61,7 @@ function Checkout() {
         <thead>
           <tr>
             <th>Cat Name</th>
+            <th>Breed</th>
             <th>Age</th>
             <th>Donation</th>
           </tr>
@@ -84,9 +70,10 @@ function Checkout() {
           {cartItems.map((item) => (
             <tr key={item.id}>
               <td>{item.name}</td>
+              <td>{item.breed}</td>
               <td>{item.age}</td>
               <td>
-                <input type='number' value={item.donation} onChange={(e) => updateDonation(item.id, e.target.value)} onFocus={(e) => e.target.select()}/>
+                <input type='text' value={item.donation} onChange={(e) => updateDonation(item.id, e.target.value)} />
               </td>
               <td>
                 <button onClick={() => removeItem(item.id)}>
@@ -98,25 +85,13 @@ function Checkout() {
         </tbody>
         <tfoot>
           <tr>
-          <td colSpan="5">
-            <button onClick={clearCart}>Clear Cart</button>
-          </td>
-
+            <td colSpan="2">Total Price:</td>
+            <td>{totalPrice}</td>
           </tr>
         </tfoot>
       </table>
-          <p className="price-checkout">Total Price:  {totalPrice}</p>
-          <button onClick={() => cartItems.length > 0 ? setShowModal(true) : alert('Your cart is empty')} className='checkout'>Checkout</button>
-          <Modal isOpen={showModal} onRequestClose={() => { setShowModal(false); clearCart(); }} 
-          className='modal'
-          style={{
-            overlay: {
-              backgroundColor: "rgba(0, 0, 0, 0.4)",
-          }}}>
-            <button onClick={() => { setShowModal(false); clearCart(); }}>X</button>
-            <h2>Thanks for adopting!</h2>
-            <img src="https://i.giphy.com/media/MDJ9IbxxvDUQM/giphy.webp" alt="cat-hug"/>
-          </Modal>
+      <button onClick={clearCart}>Clear Cart</button>
+      <button onClick={clearCart} className='checkout'>Checkout</button>
     </div>
   );
 }
