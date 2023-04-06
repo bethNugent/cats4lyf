@@ -3,22 +3,7 @@ import Modal from 'react-modal';
 import './Checkout.css';
 
 function Checkout() {
-  const [cartItems, setCartItems] = useState([
-      {
-        id: 1,
-        name: "Fluffy",
-        breed: 'Siamese',
-        age: '2yrs',
-        donation: 0
-      },
-      {
-        id: 2,
-        name: "Whiskers",
-        breed: 'Bengal',
-        age: '8yrs',
-        donation: 0
-      }
-  ]);
+  const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
@@ -55,7 +40,9 @@ function Checkout() {
   const calculateTotalPrice = (items) => {
     let totalPrice = 0;
     items.forEach((item) => {
-      totalPrice += item.donation;
+      if (typeof item.donation === 'number') {
+        totalPrice += item.donation;
+      }
     });
     return totalPrice;
   };
@@ -84,21 +71,21 @@ function Checkout() {
           </tr>
         </thead>
         <tbody>
-          {cartItems.map((item) => (
-            <tr key={item.id}>
-              <td>{item.name}</td>
-              <td>{item.breed}</td>
-              <td>{item.age}</td>
-              <td>
-                <input type='number' value={item.donation} onChange={(e) => updateDonation(item.id, e.target.value)} onFocus={(e) => e.target.select()}/>
-              </td>
-              <td>
-                <button onClick={() => removeItem(item.id)}>
-                  Remove
-                </button>
-              </td>
-            </tr>
-          ))}
+        {cartItems.map((item) => (
+          <tr key={item.id}>
+            <td>{item.name}</td>
+            <td>{item.breed}</td>
+            <td>{item.age}</td>
+            <td>
+              <input type='number' value={item.donation || 0} onChange={(e) => updateDonation(item.id, e.target.value)} onFocus={(e) => e.target.select()}/>
+            </td>
+            <td>
+              <button onClick={() => removeItem(item.id)}>
+                Remove
+              </button>
+            </td>
+          </tr>
+        ))}
         </tbody>
         <tfoot>
           <tr>
@@ -109,7 +96,7 @@ function Checkout() {
           </tr>
         </tfoot>
       </table>
-          <p className="price-checkout">Total Price:  {totalPrice}</p>
+          <p className="price-checkout">Total Price:  £{totalPrice}</p>
           <button onClick={() => cartItems.length > 0 ? setShowModal(true) : alert('Your cart is empty')} className='checkout'>Checkout</button>
           <Modal isOpen={showModal} onRequestClose={() => { setShowModal(false); clearCart(); }} 
           className='modal'
