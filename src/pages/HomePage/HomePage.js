@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { faker } from '@faker-js/faker';
 import Modal from "react-modal";
+import { faker } from '@faker-js/faker';
 import './HomePage.css';
 
 Modal.setAppElement("#root");
@@ -11,13 +11,30 @@ function HomePage() {
   const [selectedCat, setSelectedCat] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [cartItems, setCartItems] = useState([]);
 
   const toggleModal = () => {
     setShowModal(!showModal);
   };
 
   const handleCatClick = (cat) => {
-    setSelectedCat(cat);
+    const catBreeds = ['Siamese', 'Persian', 'Sphynx', 'Bengal', 'Maine Coon', "Egyptian Mau", "Burmese", "Snowshoe", "Ocicat", "Bombay"];
+    const randomBreed = catBreeds[Math.floor(Math.random() * catBreeds.length)];
+    const selectedCat = {
+      ...cat,
+      name: faker.name.firstName(),
+      age: faker.datatype.number({ min: 1, max: 20 }),
+      breed: randomBreed
+    };
+    setSelectedCat(selectedCat);
+    toggleModal();
+  };
+  
+
+  const handleAddToBasket = () => {
+    const updatedCartItems = [...cartItems, selectedCat];
+    setCartItems(updatedCartItems);
+    updateLocalStorage(updatedCartItems);
     toggleModal();
   };
 
@@ -33,6 +50,13 @@ function HomePage() {
         }
 
         const data = await response.json();
+        const cats = data.map(cat => ({
+          ...cat,
+          name: faker.name.firstName(),
+          age: faker.datatype.number({ min: 1, max: 15 })
+        }));
+        setAllCats(cats);
+        
 
         console.log(data);
         setAllCats(data);
@@ -45,6 +69,19 @@ function HomePage() {
     };
     fetchData();
   }, []);
+
+  useEffect(() => {
+    const cartData = localStorage.getItem("cartData");
+    if (cartData) {
+      const parsedData = JSON.parse(cartData);
+      setCartItems(parsedData.cartItems);
+    }
+  }, []);
+
+  const updateLocalStorage = (cartItems) => {
+    const cartData = { cartItems };
+    localStorage.setItem("cartData", JSON.stringify(cartData));
+  };
 
   return (
     <div className="App">
@@ -84,13 +121,14 @@ function HomePage() {
         </div>
         {selectedCat && (
           <>
-            <h2>Name: {faker.name.firstName()}</h2>
-            <p>Birthday: {faker.date.between('2005-01-01', '2023-04-05').toLocaleDateString()}</p>
-            <p>Location: {faker.address.city(undefined, undefined, 'en_GB')}</p>
-            <div className="modalImage">
-              <img src={selectedCat.url} alt={selectedCat.id} />
-            </div>
-          </>
+        <h2>{selectedCat.name}</h2>
+        <div className="modalImage">
+          <img src={selectedCat.url} alt={selectedCat.id} />
+        </div>
+        <p>Age: {selectedCat.age}</p>
+        <p>Breed: {selectedCat.breed}</p>
+        <button onClick={handleAddToBasket}>Add to Basket</button>
+        </>
         )}
       </Modal>
     </div>

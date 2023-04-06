@@ -29,10 +29,20 @@ margin: 50px;    width: 300px; /* set a fixed width */
     text-align: center;
     color: black;
   }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
   
   .modalImage {
     display: flex;
     justify-content: center;
+    padding: 20px 0px;
+
   }
 /* 
   .modalImage img {
@@ -41,7 +51,8 @@ margin: 50px;    width: 300px; /* set a fixed width */
     object-fit: cover;
   } */
   .modalImage img {
-    max-width: 100%;
+    min-width: 500px;
+    max-width: 500px;
     max-height: 60vh;
     object-fit: contain;   
   }
