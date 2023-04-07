@@ -6,7 +6,7 @@ import './Catalogue.css';
 
 Modal.setAppElement("#root");
 
-function Catalogue() {
+export default function Catalogue() {
   const [allCats, setAllCats] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
   const [selectedCat, setSelectedCat] = useState(null);
@@ -135,5 +135,3 @@ function Catalogue() {
     </div>
   );
 }
-
-export default HomePage;
