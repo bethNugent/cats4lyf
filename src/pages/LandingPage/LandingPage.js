@@ -9,9 +9,9 @@ import Mungojerry from './images/9p5.jpg';
 import Rumpleteezer from './images/eer.jpg';
 
 const cats = [
-    { name:"Tantomile", image:Tantomile },
-    { name:"Mungojerry", image:Mungojerry },
-    { name:"Rumpleteezer", image:Rumpleteezer }
+    { name:"Tantomile", url:Tantomile },
+    { name:"Mungojerry", url:Mungojerry },
+    { name:"Rumpleteezer", url:Rumpleteezer }
 ];
 
 export default function LandingPage()

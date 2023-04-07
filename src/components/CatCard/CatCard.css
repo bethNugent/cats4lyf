@@ -9,7 +9,8 @@
 
 .cat-card img {
     padding: 10px;
-    flex-shrink: 0;
+    max-height: 300px;
+    margin: auto;
 }
 
 .cat-card p {
