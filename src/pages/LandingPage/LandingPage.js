@@ -1,9 +1,18 @@
 import './LandingPage.css';
 
 import leaderboardImage from './images/leaderboard.png';
+
+import CatList from '../../components/CatList';
+
 import Tantomile from './images/2o6.jpg';
 import Mungojerry from './images/9p5.jpg';
 import Rumpleteezer from './images/eer.jpg';
+
+const cats = [
+    { name:"Tantomile", image:Tantomile },
+    { name:"Mungojerry", image:Mungojerry },
+    { name:"Rumpleteezer", image:Rumpleteezer }
+];
 
 export default function LandingPage()
 {
@@ -35,18 +44,7 @@ export default function LandingPage()
         </h3>
         <hr className='divider' />
         <section className='featured-felines-section'>
-            <div className='cat-card'>
-                <img src={Tantomile} alt="Sample Cat" title="Sample Cat" />
-                <p>Tantomile</p>
-            </div>
-            <div className='cat-card'>
-                <img src={Mungojerry} alt="Sample Cat" title="Sample Cat" />
-                <p>Mungojerry</p>
-            </div>
-            <div className='cat-card'>
-                <img src={Rumpleteezer} alt="Sample Cat" title="Sample Cat" />
-                <p>Rumpleteezer</p>
-            </div>
+            <CatList cats={cats} />
         </section>
         <hr className='divider' />
         <section className='two-column'>
