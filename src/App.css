@@ -15,3 +15,27 @@ body {
 main {
     padding: 2ch;
 }
+
+article header {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+article p {
+    text-align: justify;
+    margin-block: 1rem;
+}
+
+h2,
+p {
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+}

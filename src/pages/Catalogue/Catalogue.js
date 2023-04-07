@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import { faker } from '@faker-js/faker';
-import './HomePage.css';
+
+import './Catalogue.css';
 
 Modal.setAppElement("#root");
 
-function HomePage() {
+function Catalogue() {
   const [allCats, setAllCats] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
   const [selectedCat, setSelectedCat] = useState(null);
