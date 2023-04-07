@@ -42,23 +42,3 @@
     display: flex;
     justify-content: space-around;
 }
-
-.cat-card {
-    width: 400px;
-    height: 320px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
-}
-
-.cat-card:hover {
-    transform: scale(1.1);
-}
-
-.cat-card img {
-    padding: 10px;
-}
-
-.cat-card p {
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 5px;
-}

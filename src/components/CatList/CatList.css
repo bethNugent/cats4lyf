@@ -1,0 +1,7 @@
+.cat-box
+{   
+    padding: 1ch;
+    display: grid;
+    gap: 10ch;
+    grid-template-columns: repeat(3, 1fr);
+}
