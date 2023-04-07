@@ -1,5 +1,4 @@
 import './About.css';
-import Article from '../../components/Article';
 
 export default function About()
 {

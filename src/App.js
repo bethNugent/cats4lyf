@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header, Footer } from './components/Layout';
 
 // Page components.
-import DummyPage from './pages/DummyPage';
 import LandingPage from './pages/LandingPage';
 import Catalogue from './pages/Catalogue';
 import Checkout from './pages/Checkout';
@@ -34,7 +33,6 @@ export default function App()
                         <Route path="/catalogue" element={<Catalogue />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/checkout" element={<Checkout />} />
-                        <Route path="/dummy" element={<DummyPage />} />
                     </Routes>
                 </main>
                 <Footer />
