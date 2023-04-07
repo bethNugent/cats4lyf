@@ -3,8 +3,8 @@
     width: 75vw;
 }
 
-.about-container .divider {
-    margin: 2rem;
+.articles {
+    margin-block: 2rem;
 }
 
 .about-container .section-title {

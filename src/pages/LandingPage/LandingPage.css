@@ -23,21 +23,6 @@
     width: 46%;
 }
 
-.landing-container article header {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.landing-container article p {
-    text-align: justify;
-    margin-block: 1rem;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-}
-
 .landing-container .featured-felines-section {
     display: flex;
     justify-content: space-around;
