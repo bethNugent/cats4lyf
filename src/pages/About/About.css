@@ -7,31 +7,7 @@
     margin: 2rem;
 }
 
-.about-container .two-column {
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-container article {
-    width: 46%;
-}
-
-.about-container article header {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.about-container article p {
-    text-align: justify;
-    margin-block: 1rem;
-}
-
 .about-container .section-title {
     text-align: center;
     font-size: 2rem;
-}
-
-.about-container .featured-felines-section {
-    display: flex;
-    justify-content: space-around;
 }
