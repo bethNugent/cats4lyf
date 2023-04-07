@@ -1,4 +1,5 @@
 import './About.css';
+import Article from '../../components/Article';
 
 export default function About()
 {
@@ -8,35 +9,8 @@ export default function About()
             ABOUT US
         </h3>
         <hr className='divider' />
-        <section className='grid-layout'>
-                <article>
-                    <header>
-                        Can I adopt a cat if I live in rented accommodation?
-                    </header>
-                    <p>It is important to speak to your landlord or housing association to confirm you are able to keep a cat at home. Cats Protection will need written confirmation from them that this is the case.</p>
-                    <p>If you are not allowed cats as part of your tenancy agreement, there may be ways to reassure your landlord that you’d be a responsible cat owner and look after their property. For more information, visit our Purrfect Landlords campaign. </p>
-                </article>
-                <article>
-                    <header>
-                        Can I adopt a cat if I live in rented accommodation?
-                    </header>
-                    <p>It is important to speak to your landlord or housing association to confirm you are able to keep a cat at home. Cats Protection will need written confirmation from them that this is the case.</p>
-                    <p>If you are not allowed cats as part of your tenancy agreement, there may be ways to reassure your landlord that you’d be a responsible cat owner and look after their property. For more information, visit our Purrfect Landlords campaign. </p>
-                </article>
-                <article>
-                    <header>
-                        Can I adopt a cat if I live in rented accommodation?
-                    </header>
-                    <p>It is important to speak to your landlord or housing association to confirm you are able to keep a cat at home. Cats Protection will need written confirmation from them that this is the case.</p>
-                    <p>If you are not allowed cats as part of your tenancy agreement, there may be ways to reassure your landlord that you’d be a responsible cat owner and look after their property. For more information, visit our Purrfect Landlords campaign. </p>
-                </article>
-                <article>
-                    <header>
-                        Can I adopt a cat if I live in rented accommodation?
-                    </header>
-                    <p>It is important to speak to your landlord or housing association to confirm you are able to keep a cat at home. Cats Protection will need written confirmation from them that this is the case.</p>
-                    <p>If you are not allowed cats as part of your tenancy agreement, there may be ways to reassure your landlord that you’d be a responsible cat owner and look after their property. For more information, visit our Purrfect Landlords campaign. </p>
-                </article>
+        <section className=''>
+            
         </section>
     </div>);
 }
