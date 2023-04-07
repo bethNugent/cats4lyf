@@ -27,7 +27,7 @@ export default function LandingPage()
                 <header>
                     How can I adopt a cat with Cats-4-Lyf?
                 </header>
-                <p>Adopting a cat with Cats Protection is a three-step process. First, you'll need to find a cat in your local area using our Catalogue. Then, you'll be contacted by someone from your local branch or centre. They'll take you through the process of meeting the cat and adopting them.</p>
+                <p>Adopting a cat with Catz-4-Lyf is a three-step process. First, you'll need to find a cat in your local area using our <em>Cat</em>alogue. Then, you'll be contacted by someone from your local branch or centre. They'll take you through the process of meeting the cat and adopting them.</p>
                 <p>Alternatively, you can visit one of our centres with no appointment. Our centre staff and volunteers can discuss what you're looking for and help you choose the right cat for you. You can find out more about choosing a cat in our guide.</p>
             </article>
             <article>
